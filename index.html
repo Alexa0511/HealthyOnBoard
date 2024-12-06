@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthyOnBoard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/Medi.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="nav__logo">
+          <a class="nav__title" href="/">
+            <h2>HealthyOnBoard</h2>
+          </a>
+        </div>
+        <ul class="nav__link nav__link--menu">
+          <li class="nav__items">
+            <a href="#preguntas" class="nav__links">Preguntas</a>
+          </li>
+          <li class="nav__items">
+            <a href="#medicamentos" class="nav__links">Medicamentos</a>
+          </li>
+          <li class="nav__items">
+            <a href="#examenes" class="nav__links">Examenes</a>
+          </li>
+          <li class="nav__items">
+            <a href="#autor" class="nav__links">Autor</a>
+          </li>
+          <img src="./svg/close.svg" class="nav__close" />
+        </ul>
+        <div class="nav__menu">
+          <img src="./svg/menu.svg" class="nav__img" />
+        </div>
+      </nav>
+
+      <section class="hero__container container" id="inicio">
+        <h1 class="hero__title">HealthyOnBoard</h1>
+        <p class="hero__paragraph"><em>"Salud a tu alcance."</em></p>
+        <p class="hero__paragraph">
+          HealthyOnBoard es un pagina pensada para ayudar a personas padecientes
+          de cancer, entedemos su lucha y estamos dispuestos de todo corazon a
+          responder sus preguntas y brindar apoyo emocional.
+        </p>
+        <center>
+          <button class="boton">
+            <a href="#preguntas" class="nav_inks">
+              <p>Saber más</p>
+            </a>
+          </button>
+        </center>
+        <button class="scroll-to-top" onclick="scrollToTop()">⬆</button>
+      </section>
+    </header>
+
+    <main>
+      <section class="questions" id="preguntas">
+        <h2 class="subtitle">Preguntas frecuentes</h2>
+        <p class="questions__paragraph">
+          Sabemos que pueden existir dudas, no permitamos que esto sea un
+          problema, en esta sección usted podrá resolver sus dudas y tomar
+          acción temprana para un mejor manejo de la enfermedad.
+        </p>
+        <div class="questions__container">
+          <article class="questions__padding">
+            <div class="questions__answer">
+              <h3 class="questions__title">
+                ¿Qué es el cáncer?
+                <span class="questions__arrow">
+                  <img src="./svg/arrow.svg" class="questions__img" />
+                </span>
+              </h3>
+              <p class="questions__show">
+                Cáncer es el nombre que se le da a una colección de enfermedades
+                relacionadas. En todos los tipos de cáncer, algunas de las
+                células del cuerpo comienzan a dividirse de forma desordenada
+                sin detenerse y se extienden a los tejidos circundantes.
+              </p>
+            </div>
+          </article>
+
+          <article class="questions__padding">
+            <div class="questions__answer">
+              <h3 class="questions__title">
+                ¿Qué síntomas me pueden alertar si tengo un cáncer?
+                <span class="questions__arrow">
+                  <img src="./svg/arrow.svg" class="questions__img" />
+                </span>
+              </h3>
+              <p class="questions__show">
+                -Cambios en las mamas (Sensación de un bulto o firmeza en el
+                seno o debajo del brazo).<br />
+                -Dificultad para orinar, Dolor al orinar, Sangre en la orina
+                <br />
+                -Sangrado o hematomas, sin motivo conocido <br />
+                -Cambios intestinales, sangre en las heces
+              </p>
+            </div>
+          </article>
+
+          <article class="questions__padding">
+            <div class="questions__answer">
+              <h3 class="questions__title">
+                ¿El cáncer es hereditario?
+                <span class="questions__arrow">
+                  <img src="./svg/arrow.svg" class="questions__img" />
+                </span>
+              </h3>
+              <p class="questions__show">
+                Los cambios genéticos que promueven el cáncer pueden heredarse
+                de nuestros padres si los cambios están presentes en las células
+                germinales , que son las células reproductoras del cuerpo
+                (óvulos y espermatozoides). Estos cambios, llamados cambios en
+                la línea germinal, se encuentran en cada célula de la
+                descendencia.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimony" id="contacto">
+        <h2 class="testimony__title">Video Blogs</h2>
+        <div class="testimony__container container">
+          <img
+            src="./svg/chevron-left.svg"
+            class="testimony__arrow testimony_bg"
+            id="before"
+          />
+
+          <section class="testimony__body testimony__body--show" data-id="1">
+            <center>
+              <iframe
+                width="650"
+                height="450"
+                src="https://www.youtube.com/embed/AJ91i7WOKFQ?autoplay=0&mute=1"
+              >
+              </iframe>
+            </center>
+          </section>
+
+          <section class="testimony__body" data-id="2">
+            <center>
+              <iframe
+                width="650"
+                height="450"
+                src="https://www.youtube.com/embed/xnKBkBmKm38?autoplay=0&mute=1"
+              >
+              </iframe>
+            </center>
+          </section>
+
+          <section class="testimony__body" data-id="3">
+            <center>
+              <iframe
+                width="650"
+                height="450"
+                src="https://www.youtube.com/embed/ANgl8Fqmbc0?autoplay=0&mute=1"
+              >
+              </iframe>
+            </center>
+          </section>
+
+          <section class="testimony__body" data-id="4">
+            <center>
+              <iframe
+                width="650"
+                height="450"
+                src="https://www.youtube.com/embed/12TIMSFqiWw?autoplay=0&mute=1"
+              >
+              </iframe>
+            </center>
+          </section>
+
+          <img
+            src="./svg/chevron-right.svg"
+            class="testimony__arrow testimony_bg"
+            id="next"
+          />
+        </div>
+      </section>
+
+      <section class="menu" id="medicamentos">
+        <h2 class="testimony__title">Medicamentos</h2>
+
+        <center>
+          <div class="menu-content">
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Azacitidina.png" />
+                </div>
+                <div class="box-text">
+                  <h4>Azacitidina</h4>
+                  <p>
+                    Funciona al desacelerar o detener el crecimiento de las
+                    células cancerosas en su cuerpo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Dacarbazina.jpg" />
+                </div>
+                <div class="box-text">
+                  <h4>Dacarbazina</h4>
+                  <p>
+                    Se usa para tratar el melanoma (cáncer de piel) que propago
+                    a otras partes del cuerpo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Temozolomida.jpg" />
+                </div>
+                <div class="box-text">
+                  <h4>Temozolomida</h4>
+                  <p>
+                    La Tezolomida se utiliza para tratar ciertos tipos de
+                    tumores cerebrales.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Carmustina.jpg" />
+                </div>
+                <div class="box-text">
+                  <h4>Carmustina</h4>
+                  <p>
+                    Se usa para el tratamiento de ciertos tipos de tumores de
+                    encéfalo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/lomustina.png" />
+                </div>
+                <div class="box-text">
+                  <h4>Lomustina</h4>
+                  <p>
+                    Se usa con otros medicamentos para tratar el linfoma de
+                    Hodgkin que no haya mejorado.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Estreptozocina.jpg" />
+                </div>
+                <div class="box-text">
+                  <h4>Estreptozocina</h4>
+                  <p>
+                    se utiliza para tratar el cáncer de páncreas que se ha
+                    propagado a otras partes del cuerpo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Azacitidina.png" />
+                </div>
+                <div class="box-text">
+                  <h4>Azacitidina</h4>
+                  <p>
+                    Se usa para el tratamiento del síndrome mielodisplásico
+                    (globulos rojos anormales).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Fludarabina.jpg" />
+                </div>
+                <div class="box-text">
+                  <h4>Fludarabina</h4>
+                  <p>
+                    Se usa para tratar la leucemia linfocítica crónica (cancer
+                    de globulos blancos)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Metotrexato.jpeg" />
+                </div>
+                <div class="box-text">
+                  <h4>Metotrexato</h4>
+                  <p>
+                    El metotrexato trata el cáncer retardando el crecimiento de
+                    células cancerosas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Epirubicina.jpg" />
+                </div>
+                <div class="box-text">
+                  <h4>Epirubicina</h4>
+                  <p>
+                    Se usa en combinación con otros medicamentos para tratar el
+                    cáncer de seno.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Valrubicina.jpg" />
+                </div>
+                <div class="box-text">
+                  <h4>Valrubicina</h4>
+                  <p>
+                    Se usa para tratar un tipo de cáncer de vejiga urinaria no
+                    tratada.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-content">
+                <div class="box-img">
+                  <img src="images/Mitomicina C.jpg" />
+                </div>
+                <div class="box-text">
+                  <h4>Mitomicina C</h4>
+                  <p>
+                    Es un tipo de antibiótico que solo se usa en la
+                    quimioterapia contra el cáncer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+      </section>
+
+      <section id="examenes" class="examenes">
+        <h2 class="subtitle">Examenes medicos</h2>
+        <div class="examenes-container">
+          <div>
+            <h3>¿Como se diagnostica el cancer?<br /></h3>
+            <p>
+              Si usted presenta cualquier signo o síntoma que sugiere que
+              pudiese tener cáncer, su médico tomará sus antecedentes médicos
+              completos para analizar los factores de riesgo y los síntomas.<br />
+            </p>
+            <p>
+              <b
+                >Las muestras para biopsia pueden obtenerse de varias
+                maneras:</b
+              ><br />
+              - Estudios por imágenes, tal como radiografía, ecografía,
+              tomografía computarizada (CT) o imágenes por resonancia magnética
+              (MRI)<br />
+              - Biopsias para extraer muestras de tejidos o células y
+              examinarlos, estudios de endoscopia a través de un tubo iluminado
+              colocado en una abertura del cuerpo, tal como la boca, la nariz o
+              el ano.<br />
+              - Análisis de sangre<br />
+            </p>
+          </div>
+
+          <div class="examenes-img">
+            <img src="images/Examedicos.jpg" />
+          </div>
+        </div>
+
+        <div class="examenes-divider"></div>
+
+        <div class="examenes-container">
+          <div class="examenes-img">
+            <img src="images/ExamenImagenes.jpg" />
+          </div>
+
+          <div>
+            <h3>Estudios por imágenes<br /></h3>
+            <p>
+              Las pruebas con imágenes reproducen áreas internas del cuerpo que
+              ayudan al doctor a detectar la presencia de un tumor. Estas
+              imágenes se pueden hacer de diferentes formas:<br />
+            </p>
+
+            <p>
+              - Tomografía computarizada (TC)<br />
+              - Resonancia magnética<br />
+              - Tomografía nuclear<br />
+              - Tomografía por emisión de positrones (TEP)<br />
+              - Tomografía nuclear<br />
+              - Ecografía<br />
+              - Rayos x<br />
+            </p>
+          </div>
+        </div>
+
+        <div class="examenes-divider"></div>
+
+        <div class="examenes-container">
+          <div>
+            <h3>Estudios de endoscopia<br /></h3>
+            <p>
+              En la mayoría de los casos, los doctores deben hacer biopsias para
+              diagnosticar el cáncer. Una biopsia es un procedimiento en el que
+              el doctor extrae una muestra de tejido. Un patólogo observa el
+              tejido al microscopio y realiza otras pruebas para ver si el
+              tejido es canceroso<br />
+            </p>
+            <p>
+              <b
+                >Las muestras para biopsia pueden obtenerse de varias
+                maneras:</b
+              ><br />
+              - Con una aguja.<br />
+              - Con endoscopia: Colonoscopia, Broncoscopia.<br />
+              - Con cirugía<br />
+            </p>
+          </div>
+
+          <div class="examenes-img">
+            <img src="images/endoscopia.jpg" />
+          </div>
+        </div>
+
+        <div class="examenes-divider"></div>
+
+        <div class="examenes-container">
+          <div class="examenes-img">
+            <img src="images/sangre.jpg" />
+          </div>
+          <div>
+            <h3>Estudios de Sangre<br /></h3>
+            <p>
+              Si los signos y los síntomas indican que usted podría tener
+              cáncer, se harán probablemente análisis de sangre para examinar la
+              cantidad y el tipo de células sanguíneas y para medir los niveles
+              de ciertas sustancias químicas de la sangre.<br />
+            </p>
+
+            <p>
+              <b>Las muestras de sangre pueden obtenerse de varias maneras:</b
+              ><br />
+              - Recuento sanguíneo completo<br />
+              - Pruebas bioquímicas de la sangre<br />
+              - Marcadores tumorales séricos<br />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimony" id="autor">
+        <h2 class="subtitle" style="text-align: center; margin-bottom: 25px">
+          Sobre el autor
+        </h2>
+
+        <div class="testimony__container container">
+          <div class="testimony__body testimony__body--show" data-id="1">
+            <div class="testimony__texts">
+              <h2 class="subtitle">
+                Daniela Alexandra Patiño Davila,
+                <span class="testimony__course"
+                  >Estudiante Ing de multimedia.</span
+                >
+              </h2>
+              <p class="testimony__review">Creadora de HealthyOnBoard</p>
+            </div>
+
+            <figure class="testimony__picture">
+              <img src="./images/persona1.jpeg" class="testimony__img" />
+            </figure>
+          </div>
+        </div>
+        <div>
+          <h2 class="subtitle" style="text-align: center; margin: 25px 0; font-size: 25px;">
+            Contactame
+          </h2>
+          <form
+            action="procesar_formulario.php"
+            method="post"
+            class="horizontal-form"
+          >
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+          <p>
+              &copy; 2024 HealthyOnBoard. Todos los derechos reservados. Daniela Alexandra Patiño
+          </p>
+      </div>
+  </footer>
+  
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/scrolltop.js"></script>
+  </body>
+</html>
